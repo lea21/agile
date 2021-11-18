@@ -1,12 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Calendar</title>
+
+    <!-- Import js file from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/color-calendar@1.0.5/dist/bundle.js"></script>
+
+    <!-- Link css file from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/color-calendar@1.0.5/dist/css/theme-basic.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/color-calendar@1.0.5/dist/css/theme-glass.css"
+    />
+
+    <!-- Import fonts from Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style_calendrier.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="calendar-a"></div>
+      <div id="event-display"></div>
+    </div>
+
+    <script>
+        let calA = new Calendar({
+          id: "#calendar-a",
+          theme: "glass",
+          // border: "5px solid black",
+          weekdayType: "long-upper",
+          monthDisplayType: "long",
+          // headerColor: "yellow",
+          // headerBackgroundColor: "black",
+          calendarSize: "small",
+          layoutModifiers: ["month-left-align"],
+          eventsData: [
+            {
+              id: 1,
+              name: "French class",
+              start: "2021-11-18T06:00:00",
+              end: "2021-11-19T20:30:00"
+            },
+            {
+              id: 2,
+              name: "Blockchain 101",
+              start: "2020-12-20T10:00:00",
+              end: "2020-12-20T11:30:00"
+            },
+            {
+              id: 3,
+              name: "Cheese 101",
+              start: "2020-12-01T10:00:00",
+              end: "2020-12-02T11:30:00"
+            },
+            {
+              id: 4,
+              name: "Cheese 101",
+              start: "2020-12-01T10:00:00",
+              end: "2020-12-02T11:30:00"
+            }
+          ],
+          dateChanged: (currentDate, events) => {
+            console.log("date change", currentDate, events);
+          },
+          monthChanged: (currentDate, events) => {
+            console.log("month change", currentDate, events);
+          }
+        });
+    </script>
+  </body>
 </html>
