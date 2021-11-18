@@ -237,14 +237,14 @@
 					console.log(currentDate, events);
 					events.forEach(event => {
 						events_html += `
-						<div id="event-display style="text-align: center">${event.name}</div>
+						<div id="event-display" style="text-align: center">${event.name}</div>
 						`
 						}
 					)
 					if(events_html) {
 						events_display.innerHTML = events_html;
 					} else {
-						events_display.innerHTML = '<div id="event-display style="text-align: center">Pas d\'evenements</div>';
+						events_display.innerHTML = '<div id="event-display" style="text-align: center">Pas d\'evenements</div>';
 					}
 				},
 				  monthChanged: (currentDate, events) => {
