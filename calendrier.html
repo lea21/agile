@@ -53,29 +53,24 @@
               name: "French class",
               start: "2021-11-18T06:00:00",
               end: "2021-11-19T20:30:00"
-            },
-            {
-              id: 2,
-              name: "Blockchain 101",
-              start: "2020-12-20T10:00:00",
-              end: "2020-12-20T11:30:00"
-            },
-            {
-              id: 3,
-              name: "Cheese 101",
-              start: "2020-12-01T10:00:00",
-              end: "2020-12-02T11:30:00"
-            },
-            {
-              id: 4,
-              name: "Cheese 101",
-              start: "2020-12-01T10:00:00",
-              end: "2020-12-02T11:30:00"
             }
           ],
           dateChanged: (currentDate, events) => {
-            console.log("date change", currentDate, events);
-          },
+            const events_display = document.querySelector('#event-display');
+            let events_html = '';
+            console.log(currentDate, events);
+            events.forEach(event => {
+                events_html += `
+                <div id="event-display">${event.name}</div>
+                `
+                }
+            )
+            if(events_html) {
+                events_display.innerHTML = events_html;
+            } else {
+                events_display.innerHTML = '<div id="event-display">No events on this day :(</div>';
+            }
+        },
           monthChanged: (currentDate, events) => {
             console.log("month change", currentDate, events);
           }
