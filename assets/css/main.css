@@ -2136,6 +2136,8 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="date"],
+	input[type="time"],
 	input[type="tel"],
 	select,
 	textarea {
