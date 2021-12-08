@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Main Menu - ScrumLand</title>
+		<title>Menu - ScrumLand</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -83,8 +83,8 @@
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>Menu de la cantine</h1>
-								<p>Liste des menu du midi et commande de tickets </br> Ouvert de 11h à 14h</p>
+								<h1>Canteen Menu</h1>
+								<p>Lunch menu list and ticket reservation </br> Open 11 AM - 2 PM</p>
 							</header>
 							<section class="tiles" style="margin-bottom: 8vh;">
 								<div class="container" style="display: block;
@@ -98,25 +98,25 @@
                                     </div>
 								</div>
 							</section>
-							<h1>Reservation de tickets</h1>
-							<p> Vous pouvez commander vos tickets réstaurants ici </p>
+							<h1>Ticket reservation</h1>
+							<p> You may reserve your tickets here </p>
 							<form id="formMenuContainer">
 								<div  id="formMenu">
 									<label>
-										<input placeholder="Prénom">
+										<input placeholder="Last Name">
 									</label>
 									<label>
-										<input placeholder="Nom">
+										<input placeholder="First Name">
 									</label>
 								</div>
 								<label>
 									<input placeholder="Email">
 								</label>
 								<label>
-									<input placeholder="Adresse">
+									<input placeholder="Adress">
 								</label>
-								<label style="padding-left: 0;">Nombres de tickets :
-									<input type="number" step="5" value="0" min="0" max="100" placeholder="Adresse" list="defaultNumbers" style="margin-left: 2vw; width: 94%;">
+								<label style="padding-left: 0;">Ticket amount:
+									<input type="number" step="5" value="0" min="0" max="100" placeholder="Adress" list="defaultNumbers" style="margin-left: 2vw; width: 94%;">
 								</label>
 
 								<datalist id="defaultNumbers">
@@ -126,7 +126,7 @@
 								  <option value="50">
 								  <option value="100">
 								</datalist>
-								<button> Commander </button>
+								<button> Reserve </button>
 							</form>
 						</div>
 					</div>
@@ -196,24 +196,24 @@
 				      eventsData: [
 				    	{
 				    	  id: 1,
-				    	  name: "Estouffade de Porc <br><br> Riz <br> Poêlée Maraichère",
+				    	  name: "Pork Stew <br><br> Riz <br> Pan-fried Vegetable Garden",
 				    	  start: "2021-12-08T11:00:00",
 						  end: "2021-12-08T14:00:00"
 				    	},
 				    	{
 				    	  id: 2,
-				    	  name: "Sauté de Poulet au Chorizo <br><br> Boulgour <br> Wok de Carottes - Haricot Plat",
+				    	  name: "Chicken Stir-Fry with Chorizo <br><br> Bulgur <br> Carrot Wok - Flat Bean",
 				    	  start: "2021-12-09T11:00:00",
 						  end: "2021-12-09T14:00:00"
 				    	},				    	{
 				    	  id: 3,
-				    	  name: "Manchon de Poulet <br> Marin <br> Estouffade de Porc <br><br> Quartier de pommes de Terres persill",
+				    	  name: "Chicken Sleeve <br> Marin <br> Pork Stew <br><br> Quarter of potatoes with parsley",
 				    	  start: "2021-12-10T11:00:00",
 						  end: "2021-12-10T14:00:00"
 				    	},
 				      ],
                       WeekdayDisplayType: "long-lower",
-                      customWeekdayValues: ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"],
+                      customWeekdayValues: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
 				      dateChanged: (currentDate, events) => {
 				    	const events_display = document.querySelector('#event-display');
 				    	let events_html = '';
