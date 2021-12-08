@@ -1,4 +1,20 @@
+#formMenuContainer{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+}
+#formMenuContainer input{
+  width: 100%;
+  border-radius: 4px;
+}
+
+
 #formMenu{
   display: flex;
 }
 
+#formMenu input:first-of-type{
+  display: flex;
+  margin-right: 2vw;
+}
