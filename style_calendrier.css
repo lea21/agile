@@ -1,4 +1,35 @@
+#formMenuContainer{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: flex-start;
+}
+#formMenuContainer input{
+  width: 100%;
+  border-radius: 4px;
+  margin: 1vh 0;
+}
+
+
 #formMenu{
+  display: flex;
+  width: 49%;
+}
+
+#formMenu input{
+  display: flex;
+  width: auto;
+}
+
+#formMenu label{
+  padding: 0 2vw;
+}
+
+#formMenu input:first-of-type{
   display: flex;
 }
 
+#formMenuContainer label{
+  width: 90%;
+  padding: 0 2vw;
+}
