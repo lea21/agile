@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="style_calendrier.css" />
 		    <!-- Import js file from CDN -->
 			<script src="https://cdn.jsdelivr.net/npm/color-calendar@1.0.5/dist/bundle.js"></script>
 
@@ -99,12 +100,14 @@
 							<h1>Reservation de tickets</h1>
 							<p> Vous pouvez commander vos tickets réstaurants ici </p>
 							<form>
-								<label>Nom :
-									<input name="submitted-name" autocomplete="name">
-								</label>
-								<label>Prénom :
-									<input name="submitted-surname" autocomplete="surname">
-								</label>
+								<div  id="formMenu">
+									<label>
+										<input name="submitted-name" autocomplete="name" placeholder="Nom">
+									</label>
+									<label>
+										<input name="submitted-surname" autocomplete="surname" placeholder="Prénom">
+									</label>
+								</div>
 							</form>
 						</div>
 					</div>
