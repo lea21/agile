@@ -1,0 +1,235 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Main Menu - ScrumLand</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="style_calendrier.css" />
+		    <!-- Import js file from CDN -->
+			<script src="https://cdn.jsdelivr.net/npm/color-calendar@1.0.5/dist/bundle.js"></script>
+
+			<!-- Link css file from CDN -->
+			<link
+			  rel="stylesheet"
+			  href="https://cdn.jsdelivr.net/npm/color-calendar@1.0.5/dist/css/theme-basic.css"
+			/>
+			<link
+			  rel="stylesheet"
+			  href="https://cdn.jsdelivr.net/npm/color-calendar@1.0.5/dist/css/theme-glass.css"
+			/>
+		
+			<!-- Import fonts from Google Fonts -->
+			<link
+			  href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+			  rel="stylesheet"
+			/>
+			<link
+			  href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+			  rel="stylesheet"
+			/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">ScrumLand</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="pageVille.html">La ville en images</a></li>
+							<li><a href="pageHistoire.html">Histoire</a></li>
+							<li><a href="contact.html">Nous contacter</a></li>
+							<li><a href="listeElu.html">Liste des élus</a></li>
+							<li><a href="filActu.html">Fil d'actualité </a></li>
+							<li><a href="listeCommerces.html">Liste des commerces</a></li>
+							<li><a href="numUrgence.html">Les numeros d'urgence</a></li>
+							<li><a href="pageMenu.html">le menu du restaurant de Scrumland</a></li>
+							<li><a href="pageJumellage.html">Les villes qui nous sont jumelées</a></li>
+							<li><a href="pageCulture.html">La culture dans notre ville</a></li>
+							<li><a href="pageSportEtLoisirs.html">les sports et les loisirs</a></li>
+							<li><a href="MentionsLegales.html">Les mentions légales</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h1>Menu de la cantine</h1>
+								<p>Liste des menu du midi et commande de tickets </br> Ouvert de 11h à 14h</p>
+							</header>
+							<section class="tiles" style="margin-bottom: 8vh;">
+								<div class="container" style="display: block;
+															  margin-left: auto;
+															  margin-right: auto;
+															  margin-top: 5vh;"
+ 								>
+									<div id="calendar-a"></div>
+									<div id="event-display">
+
+                                    </div>
+								</div>
+							</section>
+							<h1>Reservation de tickets</h1>
+							<p> Vous pouvez commander vos tickets réstaurants ici </p>
+							<form id="formMenuContainer">
+								<div  id="formMenu">
+									<label>
+										<input placeholder="Prénom">
+									</label>
+									<label>
+										<input placeholder="Nom">
+									</label>
+								</div>
+								<label>
+									<input placeholder="Email">
+								</label>
+								<label>
+									<input placeholder="Adresse">
+								</label>
+								<label style="padding-left: 0;">Nombres de tickets :
+									<input type="number" step="5" value="0" min="0" max="100" placeholder="Adresse" list="defaultNumbers" style="margin-left: 2vw; width: 94%;">
+								</label>
+
+								<datalist id="defaultNumbers">
+								  <option value="0">
+								  <option value="10">
+								  <option value="25">
+								  <option value="50">
+								  <option value="100">
+								</datalist>
+								<button> Commander </button>
+							</form>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				let calA = new Calendar({
+				      id: "#calendar-a",
+				      theme: "basic",
+                      startWeekday: 1,
+
+                      //primaryColor: "#ff00a6",
+				      // border: "5px solid black",
+				      weekdayType: "long-upper",
+				      monthDisplayType: "long",
+				      // headerColor: "yellow",
+				      // headerBackgroundColor: "black",
+				      layoutModifiers: ["month-left-align"],
+				      eventsData: [
+				    	{
+				    	  id: 1,
+				    	  name: "Estouffade de Porc <br><br> Riz <br> Poêlée Maraichère",
+				    	  start: "2021-12-08T11:00:00",
+						  end: "2021-12-08T14:00:00"
+				    	},
+				    	{
+				    	  id: 2,
+				    	  name: "Sauté de Poulet au Chorizo <br><br> Boulgour <br> Wok de Carottes - Haricot Plat",
+				    	  start: "2021-12-09T11:00:00",
+						  end: "2021-12-09T14:00:00"
+				    	},				    	{
+				    	  id: 3,
+				    	  name: "Manchon de Poulet <br> Marin <br> Estouffade de Porc <br><br> Quartier de pommes de Terres persill",
+				    	  start: "2021-12-10T11:00:00",
+						  end: "2021-12-10T14:00:00"
+				    	},
+				      ],
+                      WeekdayDisplayType: "long-lower",
+                      customWeekdayValues: ["Lun", "Mar", "Mer", "Jeu", "Ven", "Sam", "Dim"],
+				      dateChanged: (currentDate, events) => {
+				    	const events_display = document.querySelector('#event-display');
+				    	let events_html = '';
+				    	events.forEach(event => {
+				    		events_html += `
+				    		<div id="event-display" style="text-align: center">${event.name}</div>
+				    		`
+				    		}
+				    	)
+				    	if(events_html) {
+				    		events_display.innerHTML = events_html;
+				    	} else {
+				    		events_display.innerHTML = '<div id="event-display" style="text-align: center">Pas de menu</div>';
+				    	}
+				    },
+				});
+			</script>
+
+	</body>
+</html>
