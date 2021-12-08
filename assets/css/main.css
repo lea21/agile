@@ -2136,6 +2136,8 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="date"],
+	input[type="time"],
 	input[type="tel"],
 	select,
 	textarea {
@@ -2167,6 +2169,8 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="date"]:focus,
+		input[type="time"]:focus,
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
@@ -2198,6 +2202,8 @@ input, select, textarea {
 
 	input[type="text"],
 	input[type="password"],
+	input[type="date"],
+	input[type="time"],
 	input[type="email"],
 	select {
 		height: 3em;
